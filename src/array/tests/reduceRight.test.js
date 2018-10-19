@@ -7,6 +7,6 @@ describe('array/reduceRight', () => {
     const expected = 152;
     const reduceFn = (acc, _) => acc + _;
 
-    expect(reduce(reduceFn, defaultValue)(input)).toEqual(expected);
+    expect(reduceRight(reduceFn, defaultValue)(input)).toEqual(expected);
   });
 });
