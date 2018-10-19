@@ -6,3 +6,15 @@ describe('array/tail', () => {
     expect(tail(arr)).toEqual([200, 300]);
   })
 })
+describe('array/tail', () => {
+  it('should return empty array incase of just one element', () => {
+    const arr = [100];
+    expect(tail(arr)).toEqual([]);
+  })
+})
+describe('array/tail', () => {
+  it('should return empty array incase of no elements in the array', () => {
+    const arr = [];
+    expect(tail(arr)).toEqual([]);
+  })
+})
